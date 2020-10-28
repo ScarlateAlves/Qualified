@@ -6,5 +6,11 @@ var array = [true, true, true, false,
     false, false, true, true
 ]
 
+var r = 0
+for (let index = 0; index < array.length; index++) {
+    if (array[index] == true) {
+        r++
+    }
 
-console.log(array.indexOf())
+}
+console.log(r)
