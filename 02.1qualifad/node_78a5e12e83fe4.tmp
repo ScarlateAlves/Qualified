@@ -1,0 +1,9 @@
+var numero = 3;
+var i = 0,
+    soma = 0;
+while (numero => i) {
+    soma += i;
+    i++
+}
+
+console.log(soma)
