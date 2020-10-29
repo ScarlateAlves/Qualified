@@ -19,6 +19,8 @@ for (let index = 0; index < array.length; index++) {
         array2.push(array[index])
     }
 
+
 }
+
 
 console.log(array2)
