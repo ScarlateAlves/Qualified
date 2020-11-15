@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const winnerList1 = [{
+            season: '1999-00',
+            team: 'Real Madrid',
+            country: 'Spain'
+        }, {
+            season: '2000-01',
+            team: 'Bayern Munich',
+            country: 'Germany'
+        }, {
+            season: '2001-02',
+            team: 'Real Madrid',
+            country: 'Spain'
+        }, {
+            season: '2002-03',
+            team: 'Milan',
+            country: 'Italy'
+        }, {
+            season: '2003-04',
+            team: 'Porto',
+            country: 'Portugal'
+        }]
+
+
+        // console.log("Entendendo forEach")
+        // console.log("mostrando um valor")
+        // winnerList1.forEach(valor => {
+        //         if (valor.country == "Spain") {
+        //             console.log(valor)
+        //         }
+        //     })
+        var y = 0
+        var x = 0
+        var z = 0
+        console.log("utilizando dois parametros")
+        winnerList1.forEach(function(valor, index, inteira) {
+            var espanha = valor.country.indexOf("Spain")
+            if (espanha > -1) {
+                y++
+            }
+        })
+        console.log(y)
+        winnerList1.forEach(function(valor, index, inteira) {
+            var espanha = valor.country.indexOf("Portugal")
+            if (espanha > -1) {
+                x++
+            }
+        })
+        console.log(x)
+        winnerList1.forEach(function(valor, index, inteira) {
+            var espanha = valor.country.indexOf("Sportland")
+            if (espanha > -1) {
+                z++
+            }
+        })
+
+        console.log(z)
+        var p = winnerList1.indexOf()
+        winnerList1.forEach(function(valor) {
+            console.log("valor", valor.country.indexOf(pais))
+            console.log("\n")
+
+
+        })
+
+        // //foi
+        // console.log("outa funcao")
+        // var array = ["4", "b", "a", "a", "b"]
+        // var array2 = []
+        // for (let index = 0; index < array.length; index++) {
+        //     console.log(array.indexOf(array[index]))
+        //         // array2.push(array[index])
+
+
+        // }
+    </script>
+</body>
+
+</html>

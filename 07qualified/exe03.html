@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let numero = 371
+
+        function narcisista(numero) {
+            var f = numero.toString()
+            var aux
+            var num = f.split('')
+            let soma = 0
+            var tamanho = num.length
+            for (let index = 0; index < num.length; index++) {
+                aux = parseInt(num[index]) ** tamanho
+                soma += aux
+            }
+
+            if (soma === numero) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        console.log(narcisista(numero))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var indices = [];
+        // var array = ["a", "b", "c", "d", "e"]
+        // var elemento = ["b", "e"]
+        var indexVetor = []
+
+        var array = [1, 2, 1]
+        var elemento2 = [2, 4]
+
+        function arrayDiff(array, elemento2) {
+
+            var tamanho = 0
+            if (array.length > elemento2.length) {
+                tamanho = array.length
+
+            } else {
+                tamanho = elemento2.length
+            }
+            var a = []
+            for (let index = 0; index < tamanho; index++) {
+                var valor = array.indexOf(elemento2[index])
+                if (valor === -1) {
+                    array.splice(valor, 1)
+                }
+            }
+
+            return array
+        }
+    </script>
+</body>
+
+</html>
