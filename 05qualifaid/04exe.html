@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var array = "1923456789044"
+
+        function solution(b) {
+            var digits = b.split('')
+            var maior = 0
+            for (let index = 0; index < digits.length - 4; index++) {
+                //  var string = digits[index] + digits[index + 1] + digits[index + 2] + digits[index + 3] + digits[index + 4]
+                if (maior < digits[index]) {
+                    maior = digits[index]
+
+
+                }
+
+            }
+
+            var d = parseInt(maior)
+            return d
+        }
+
+        console.log(solution(array))
+
+
+
+
+
+        // console.log(i)
+    </script>
+</body>
+
+</html>

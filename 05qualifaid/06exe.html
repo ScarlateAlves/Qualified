@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const boletin = {
+            'matematica': 6,
+            'historia': 7,
+            'fisica': 8,
+            'geografia': 9,
+            'quimica': 10
+
+        }
+
+        const boletin1 = {
+            'matematica': 8,
+            'historia': 7,
+            'fisica': 8,
+            'geografia': 9,
+            'quimica': 10
+        }
+
+        const boletin3 = {
+            'matematica': 6,
+            'historia': 5,
+            'fisica': 5,
+            'geografia': 9,
+            'quimica': 10
+        }
+
+
+        var materia = boletin.geografia + boletin.fisica + boletin.historia + boletin.matematica + boletin.quimica
+        var materia1 = boletin1.geografia + boletin1.fisica + boletin1.historia + boletin1.matematica + boletin1.quimica
+        var materia3 = boletin3.geografia + boletin3.fisica + boletin3.historia + boletin3.matematica + boletin3.quimica
+
+
+        if (materia > materia1 && matria > materia3) {
+            console.log("Eu preciso comprar uma bicicleta para meu primeiro filho")
+        } else if (materia1 > materia && materia1 > materia3) {
+            console.log("Eu preciso comprar uma bicicleta para meu segundo filho")
+        } else if (materia3 > materia && materia3 > materia1) {
+            console.log("Eu preciso comprar uma bicicleta para meu terceiro filho")
+        }
+    </script>
+</body>
+
+</html>

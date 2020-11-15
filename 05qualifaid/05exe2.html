@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const winnerList1 = [{
+            season: '1999-00',
+            team: 'Real Madrid',
+            country: 'Spain'
+        }, {
+            season: '2000-01',
+            team: 'Bayern Munich',
+            country: 'Germany'
+        }, {
+            season: '2001-02',
+            team: 'Real Madrid',
+            country: 'Spain'
+        }, {
+            season: '2002-03',
+            team: 'Milan',
+            country: 'Italy'
+        }, {
+            season: '2003-04',
+            team: 'Porto',
+            country: 'Portugal'
+        }]
+
+        function countWins(winnerList, pais) {
+            var y = 0
+            console.log("utilizando dois parametros")
+            winnerList.forEach(function(valor) {
+                var espanha = valor.country.indexOf(pais)
+                if (espanha > -1) {
+                    y++
+                }
+            })
+            return y
+        }
+
+        console.log(countWins(winnerList, "Spain"))
+    </script>
+
+</body>
+
+</html>
